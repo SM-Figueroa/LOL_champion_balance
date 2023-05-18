@@ -64,19 +64,24 @@ Here is final cleaned dataframe:
 |       5 |         7    | Liiv SANDBOX Challengers      |             0 |             0 |
 |       3 |         5    | Oh My God                     |             0 |             0 |
 
+|   quadrakills |   pentakills | datacompleteness   |   damagetochampions |
+|--------------:|-------------:|:-------------------|--------------------:|
+|             0 |            0 | complete           |               14258 |
+|             0 |            0 | complete           |               20690 |
+|             0 |            0 | complete           |               23082 |
+|             0 |            0 | complete           |               11261 |
+|             0 |            0 | partial            |               12577 |
 
-|   quadrakills    |   pentakills    | datacompleteness   |   damagetochampions |     dpm    |   damagemitigatedperminute     |   totalgold    |   impact_score    |
-|-----------------:|----------------:|:-------------------|--------------------:|-----------:|-------------------------------:|---------------:|------------------:|
-|             0    |            0    | complete           |               14258 | 499.405    |                    227.776     |        9715    |        7.65728    |
-|             0    |            0    | complete           |               20690 | 724.693    |                    426.935     |       11532    |       13.7298     |
-|             0    |            0    | complete           |               23082 | 655.118    |                    366.698     |       15149    |       12.5572     |
-|             0    |            0    | complete           |               11261 | 319.612    |                    950.095     |       14999    |       11.5279     |
-|             0    |            0    | partial            |               12577 | 552.835    |                    126.741     |        9928    |        7.55822    |
+|     dpm |   damagemitigatedperminute |   totalgold |   impact_score |
+|--------:|---------------------------:|------------:|---------------:|
+| 499.405 |                    227.776 |        9715 |        7.65728 |
+| 724.693 |                    426.935 |       11532 |       13.7298  |
+| 655.118 |                    366.698 |       15149 |       12.5572  |
+| 319.612 |                    950.095 |       14999 |       11.5279  |
+| 552.835 |                    126.741 |        9928 |        7.55822 |
 
 
-
-
-<iframe src="assets/midlane_kills.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/mid_dpm.html" width=800 height=600 frameBorder=0></iframe>
 
 The previous figure depicts the distribution of the number of kills obtained by midlaners across all games. It appears that the majority
 of midlaners secure 0-5 kills while very few get above 10 kills.
