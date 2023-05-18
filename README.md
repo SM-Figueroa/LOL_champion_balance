@@ -129,7 +129,7 @@ when 'teamname' is missing vs. when it is not missing.
 
 <iframe src="assets/hyp2.html" width=800 height=600 frameBorder=0></iframe>
 
-The p-value of the permutation test was **0.4312**. We therefore *cannot reject* the null hypothesis that distributions came from the same
+The p-value of the permutation test was **0.4318**. We therefore *cannot reject* the null hypothesis that distributions came from the same
 population and cannot conclude that this is an example of NMAR.
 
 ---
@@ -157,7 +157,7 @@ The observed distributions look as follows:
 
 <iframe src="assets/irelia_v_others.html" width=800 height=600 frameBorder=0></iframe>
 
-Additionally, we will use a **significance level** of 0.05. After performing the test with 5000 simulated iterations a **p-value** of 0.0232
+Additionally, we will use a **significance level** of 0.05. After performing the test with 5000 simulated iterations a **p-value** of 0.0218
 was obtained. We can therefore *reject* the null hypothesis that the distribution of impact scores from Irelia and from other champions come
 from the same population at the 0.05 significance level. 
 
