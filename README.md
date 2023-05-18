@@ -8,7 +8,7 @@ by Sawyer Figueroa (s2figuer@ucsd.edu)
 
 ## Introduction
 
-The dataset being investigated in this analysis is a dataset from Oracle's Elixir at the link: https://oracleselixir.com/tools/downloads.
+The dataset being investigated in this analysis is a dataset from [Oracle's Elixir](https://oracleselixir.com/tools/downloads).
 This dataset contains game data for competitive League of Legend's matches in 2022. Each row corresponds to one player in each game with
 two additional rows for full team data. In League of Legends, 10 players play the game at once, with 5 on one team and 5 on the other.
 Each player has the option of choosing a "champion" that they will play throughout the entirety of the game. However, not all champions
@@ -56,22 +56,22 @@ Here is final cleaned dataframe:
 | 8401-8401_game_1      | mid        | Syndra     | LPL      | Creme        |
 
 
-|   kills |   assists | teamname                      |   doublekills |   triplekills |
-|--------:|----------:|:------------------------------|--------------:|--------------:|
-|       2 |         3 | Fredit BRION Challengers      |             0 |             0 |
-|       6 |        12 | Nongshim RedForce Challengers |             2 |             0 |
-|       2 |         0 | T1 Challengers                |             0 |             0 |
-|       5 |         7 | Liiv SANDBOX Challengers      |             0 |             0 |
-|       3 |         5 | Oh My God                     |             0 |             0 |
+|   kills |   assists    | teamname                      |   doublekills |   triplekills |
+|--------:|-------------:|:------------------------------|--------------:|--------------:|
+|       2 |         3    | Fredit BRION Challengers      |             0 |             0 |
+|       6 |        12    | Nongshim RedForce Challengers |             2 |             0 |
+|       2 |         0    | T1 Challengers                |             0 |             0 |
+|       5 |         7    | Liiv SANDBOX Challengers      |             0 |             0 |
+|       3 |         5    | Oh My God                     |             0 |             0 |
 
 
-|   quadrakills |   pentakills | datacompleteness   |   damagetochampions |     dpm |   damagemitigatedperminute |   totalgold |   impact_score |
-|--------------:|-------------:|:-------------------|--------------------:|--------:|---------------------------:|------------:|---------------:|
-|             0 |            0 | complete           |               14258 | 499.405 |                    227.776 |        9715 |        7.65728 |
-|             0 |            0 | complete           |               20690 | 724.693 |                    426.935 |       11532 |       13.7298  |
-|             0 |            0 | complete           |               23082 | 655.118 |                    366.698 |       15149 |       12.5572  |
-|             0 |            0 | complete           |               11261 | 319.612 |                    950.095 |       14999 |       11.5279  |
-|             0 |            0 | partial            |               12577 | 552.835 |                    126.741 |        9928 |        7.55822 |
+|   quadrakills    |   pentakills    | datacompleteness   |   damagetochampions |     dpm    |   damagemitigatedperminute     |   totalgold    |   impact_score    |
+|-----------------:|----------------:|:-------------------|--------------------:|-----------:|-------------------------------:|---------------:|------------------:|
+|             0    |            0    | complete           |               14258 | 499.405    |                    227.776     |        9715    |        7.65728    |
+|             0    |            0    | complete           |               20690 | 724.693    |                    426.935     |       11532    |       13.7298     |
+|             0    |            0    | complete           |               23082 | 655.118    |                    366.698     |       15149    |       12.5572     |
+|             0    |            0    | complete           |               11261 | 319.612    |                    950.095     |       14999    |       11.5279     |
+|             0    |            0    | partial            |               12577 | 552.835    |                    126.741     |        9928    |        7.55822    |
 
 
 
