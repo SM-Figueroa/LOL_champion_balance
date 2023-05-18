@@ -83,8 +83,8 @@ Here is final cleaned dataframe:
 
 <iframe src="assets/mid_dpm.html" width=800 height=600 frameBorder=0></iframe>
 
-The previous figure depicts the distribution of the number of kills obtained by midlaners across all games. It appears that the majority
-of midlaners secure 0-5 kills while very few get above 10 kills.
+The previous figure depicts the distribution of the damage per minute dealt by midlaners across all games. It appears that the majority
+of midlaners secure 0-1000 dpm while very few get above 1500.
 
 <iframe src="assets/pos_impact_scores.html" width=800 height=600 frameBorder=0></iframe>
 
