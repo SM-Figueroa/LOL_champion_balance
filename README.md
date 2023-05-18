@@ -1,4 +1,5 @@
-# LOL_champion_balance
+# League of Legends Champion Balance
+*Irelia is broken*
 
 by Sawyer Figueroa (s2figuer@ucsd.edu)
 
@@ -16,7 +17,11 @@ others. Some players would argue that this is certainly not the case. "Unbalance
 of the game and the competitive integrity of the sport. This dataset of league of legends games at the highest level of play will 
 hopefully shed light on what champions truly have a greater impact on the outcome of the game. In this analysis, I will be investigating
 the following specific question:
+
+
 **Does Irelia have more impact on the outcome of competitive matches than other midlaners?**
+
+
 The dataset in question contains a total of **149400 rows** and **123 columns**. For our purposes, we will only be looking at **17 columns**. These are
 *'gameid', 'position', 'champion', 'league', 'playername', 'kills', 'assists', 'teamname','doublekills', 'triplekills', 'quadrakills', 
 'pentakills', 'datacompleteness', 'damagetochampions', 'dpm', 'damagemitigatedperminute', and 'totalgold'. The 'gameid', 'playername', 'league',
@@ -40,6 +45,7 @@ Missing values from the 'damagetochampions' and 'dpm' columns were dropped as on
 data was filtered to only included players in the 'position' of 'mid'.
 
 Here is final cleaned dataframe:
+
 | gameid                | position   | champion   | league   | playername   |   kills |   assists | teamname                      |   doublekills |   triplekills |   quadrakills |   pentakills | datacompleteness   |   damagetochampions |     dpm |   damagemitigatedperminute |   totalgold |   impact_score |
 |:----------------------|:-----------|:-----------|:---------|:-------------|--------:|----------:|:------------------------------|--------------:|--------------:|--------------:|-------------:|:-------------------|--------------------:|--------:|---------------------------:|------------:|---------------:|
 | ESPORTSTMNT01_2690210 | mid        | LeBlanc    | LCK CL   | Feisty       |       2 |         3 | Fredit BRION Challengers      |             0 |             0 |             0 |            0 | complete           |               14258 | 499.405 |                    227.776 |        9715 |        7.65728 |
@@ -47,6 +53,7 @@ Here is final cleaned dataframe:
 | ESPORTSTMNT01_2690219 | mid        | Orianna    | LCK CL   | TolanD       |       2 |         0 | T1 Challengers                |             0 |             0 |             0 |            0 | complete           |               23082 | 655.118 |                    366.698 |       15149 |       12.5572  |
 | ESPORTSTMNT01_2690219 | mid        | Renekton   | LCK CL   | Ten10        |       5 |         7 | Liiv SANDBOX Challengers      |             0 |             0 |             0 |            0 | complete           |               11261 | 319.612 |                    950.095 |       14999 |       11.5279  |
 | 8401-8401_game_1      | mid        | Syndra     | LPL      | Creme        |       3 |         5 | Oh My God                     |             0 |             0 |             0 |            0 | partial            |               12577 | 552.835 |                    126.741 |        9928 |        7.55822 |
+
 
 
 <iframe src="assets/mid_kills.html" width=800 height=600 frameBorder=0></iframe>
@@ -60,14 +67,16 @@ Looking at the impact score distributions across all roles, we can see that supp
 and botlaners have higher impact. This supports our decision to limit the analysis to midlaners, so as not to have confounding variables
 in our final results.
 
+
 |league  |     LCS |     LCK |     LEC |     LPL |
 |champion|         |         |         |         |
-|        |--------:|--------:|--------:|--------:|
+|-------:|--------:|--------:|--------:|--------:|
 |Irelia  | 17836   | 15323   | 10744   | 12474   |
 |Sylas   | 14356.7 | 14518.6 | 17322.7 | 14935.2 |
 |Malzahar| 16165   | 11252   | 24040   |   nan   |
 |Akshan  |   nan   |   nan   |  8853   |   nan   |
 |Ahri    | 15417.5 | 16258.1 | 20015   | 16721.3 |
+
 
 In this table, we compare the total damage to champion average aggregates between 4 popular competitive leagues and 5 popular midlane champions.
 It's clear that Irelia has varying performance in different regions due to differences in playstyle, therefore, it could be the case that
