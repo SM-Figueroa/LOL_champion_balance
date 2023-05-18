@@ -46,17 +46,37 @@ data was filtered to only included players in the 'position' of 'mid'.
 
 Here is final cleaned dataframe:
 
-| gameid                | position   | champion   | league   | playername   |   kills |   assists | teamname                      |   doublekills |   triplekills |   quadrakills |   pentakills | datacompleteness   |   damagetochampions |     dpm |   damagemitigatedperminute |   totalgold |   impact_score |
-|:----------------------|:-----------|:-----------|:---------|:-------------|--------:|----------:|:------------------------------|--------------:|--------------:|--------------:|-------------:|:-------------------|--------------------:|--------:|---------------------------:|------------:|---------------:|
-| ESPORTSTMNT01_2690210 | mid        | LeBlanc    | LCK CL   | Feisty       |       2 |         3 | Fredit BRION Challengers      |             0 |             0 |             0 |            0 | complete           |               14258 | 499.405 |                    227.776 |        9715 |        7.65728 |
-| ESPORTSTMNT01_2690210 | mid        | Viktor     | LCK CL   | FIESTA       |       6 |        12 | Nongshim RedForce Challengers |             2 |             0 |             0 |            0 | complete           |               20690 | 724.693 |                    426.935 |       11532 |       13.7298  |
-| ESPORTSTMNT01_2690219 | mid        | Orianna    | LCK CL   | TolanD       |       2 |         0 | T1 Challengers                |             0 |             0 |             0 |            0 | complete           |               23082 | 655.118 |                    366.698 |       15149 |       12.5572  |
-| ESPORTSTMNT01_2690219 | mid        | Renekton   | LCK CL   | Ten10        |       5 |         7 | Liiv SANDBOX Challengers      |             0 |             0 |             0 |            0 | complete           |               11261 | 319.612 |                    950.095 |       14999 |       11.5279  |
-| 8401-8401_game_1      | mid        | Syndra     | LPL      | Creme        |       3 |         5 | Oh My God                     |             0 |             0 |             0 |            0 | partial            |               12577 | 552.835 |                    126.741 |        9928 |        7.55822 |
+
+| gameid                | position   | champion   | league   | playername   |
+|:----------------------|:-----------|:-----------|:---------|:-------------|
+| ESPORTSTMNT01_2690210 | mid        | LeBlanc    | LCK CL   | Feisty       |
+| ESPORTSTMNT01_2690210 | mid        | Viktor     | LCK CL   | FIESTA       |
+| ESPORTSTMNT01_2690219 | mid        | Orianna    | LCK CL   | TolanD       |
+| ESPORTSTMNT01_2690219 | mid        | Renekton   | LCK CL   | Ten10        |
+| 8401-8401_game_1      | mid        | Syndra     | LPL      | Creme        |
+
+
+|   kills |   assists | teamname                      |   doublekills |   triplekills |
+|--------:|----------:|:------------------------------|--------------:|--------------:|
+|       2 |         3 | Fredit BRION Challengers      |             0 |             0 |
+|       6 |        12 | Nongshim RedForce Challengers |             2 |             0 |
+|       2 |         0 | T1 Challengers                |             0 |             0 |
+|       5 |         7 | Liiv SANDBOX Challengers      |             0 |             0 |
+|       3 |         5 | Oh My God                     |             0 |             0 |
+
+
+|   quadrakills |   pentakills | datacompleteness   |   damagetochampions |     dpm |   damagemitigatedperminute |   totalgold |   impact_score |
+|--------------:|-------------:|:-------------------|--------------------:|--------:|---------------------------:|------------:|---------------:|
+|             0 |            0 | complete           |               14258 | 499.405 |                    227.776 |        9715 |        7.65728 |
+|             0 |            0 | complete           |               20690 | 724.693 |                    426.935 |       11532 |       13.7298  |
+|             0 |            0 | complete           |               23082 | 655.118 |                    366.698 |       15149 |       12.5572  |
+|             0 |            0 | complete           |               11261 | 319.612 |                    950.095 |       14999 |       11.5279  |
+|             0 |            0 | partial            |               12577 | 552.835 |                    126.741 |        9928 |        7.55822 |
 
 
 
-<iframe src="assets/mid_kills.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/midlane_kills.html" width=800 height=600 frameBorder=0></iframe>
 
 The previous figure depicts the distribution of the number of kills obtained by midlaners across all games. It appears that the majority
 of midlaners secure 0-5 kills while very few get above 10 kills.
