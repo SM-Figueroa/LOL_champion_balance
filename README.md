@@ -41,9 +41,15 @@ also contained quite a large amount of missing data, specifically in the 'double
 and 'damagemitigatedperminute' columns. These values were imputed using *probabilistic imputation* conditioned on champion. The choice
 for this imputation was made based on the fact that different champions tend to have different strengths and weaknesses no matter their role.
 So it wouldn't be fair to draw a value for the amount of damage to dealt to champions for Yone from the same distribution as Lulu for example.
-Missing values from the 'damagetochampions' and 'dpm' columns were dropped as only 10/149400 rows contained missing values. Finally, the
-data was filtered to only included players in the 'position' of 'mid'.
+Missing values from the 'damagetochampions' and 'dpm' columns were dropped as only 10/149400 rows contained missing values. 
 
+Next, I computed and included the most important metric for this analysis: the impact score. This metric is a linear
+combination of all numerical variables in the dataset kept so far. Each variable was weighted according to their
+overall impact on the process of the game, with pentakills holding the most weight. I personally decided the
+specific values for each weight which can be found in the notebook submitted with this website.
+
+
+Finally, the data was filtered to only included players in the 'position' of 'mid'.
 Here is final cleaned dataframe:
 
 
